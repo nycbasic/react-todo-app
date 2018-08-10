@@ -2,6 +2,7 @@
   "name": "simple-text-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nycbasic.github.io/react-todo-app",
   "dependencies": {
     "bootstrap": "^4.1.2",
     "jquery": "^3.3.1",
@@ -16,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist"
   }
 }

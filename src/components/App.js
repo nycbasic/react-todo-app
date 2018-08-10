@@ -16,8 +16,20 @@ class App extends Component {
   };
 
   submitItem = () => {
+    const alert = document.querySelector(".alert");
+
     if (this.state.input === "") {
-      alert("You cannot leave the text field blank");
+      alert.innerHTML = "Please enter text";
+      alert.style.opacity = 1;
+      setTimeout(() => {
+        alert.style.opacity = 0;
+      }, 3000);
+    } else if (this.state.input.length <= 4) {
+      alert.innerHTML = "Please enter text longer than 4 characters";
+      alert.style.opacity = 1;
+      setTimeout(() => {
+        alert.style.opacity = 0;
+      }, 3000);
     } else {
       this.setState({
         items: this.state.items.concat(this.state.input),

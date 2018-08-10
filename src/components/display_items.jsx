@@ -6,6 +6,7 @@ const DisplayItems = props => {
     <div className="main">
       <h2>To-Do List</h2>
       <div className="container">
+        <div class="alert alert-warning" role="alert" />
         <div className="input-group mb-3">
           <div className="input-group-prepend">
             <button

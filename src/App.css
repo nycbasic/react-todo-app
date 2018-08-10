@@ -1,11 +1,10 @@
 h2 {
   text-align: center;
-  padding: 3% 0;
+  padding: 3% 0 0 0;
 }
 
 .container .input-group {
   width: 100%;
-  margin: 0 auto;
 }
 
 .main .container {
@@ -28,10 +27,22 @@ h2 {
   color: red;
 }
 
+.far:hover {
+  color: black;
+  transition: color 1s;
+}
+
 .btn-danger {
   margin: 2% 0;
 }
 
 .btn-outline-primary {
   width: 100px;
+}
+
+.alert {
+  opacity: 0;
+  text-align: center;
+  transition: all 1s;
+  height: 50px;
 }
